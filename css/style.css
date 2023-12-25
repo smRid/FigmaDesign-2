@@ -1,0 +1,370 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  margin: 10px 10px;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul{
+  list-style-type: none;
+  display: flex;
+}
+
+.navbar{
+  background-color: rgb(255, 255, 255);
+  padding: 0px 10px;
+}
+
+.container{
+  padding: 0px 20px;
+  max-width: 1100px;
+  background-color: none;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .container .menu ul li {
+  padding: 20px 20px;
+  text-decoration: skyblue;
+  border-bottom: 4px solid transparent;
+}
+
+nav .container .menu ul li:hover{
+  background: rgb(223, 223, 223);
+  color: rgb(60, 162, 221);
+  border-bottom: 4px solid rgb(26, 218, 231);
+}
+
+nav .container .menu ul li:hover a{
+  color: rgb(26, 218, 231);
+  transition: 0.3s;
+}
+
+
+/* ======================Banner==================== */
+
+#banner {
+  background-image: url(images/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  width: 100%;
+}
+
+#banner .container{
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 150px 0px;
+}
+
+#banner .overlay{
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+}
+
+#banner .container h1{
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+#banner .container p{
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+#banner .container button{
+  padding: 15px 50px;
+  background-color: transparent;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+}
+
+#banner .container button:hover{
+  background-color: rgb(111, 167, 189);
+  text-decoration: #ffffff;
+  transition: all ease 0.5s;
+}
+
+/* ========================about====================== */
+
+#about .container{
+  padding: 50px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#about .container .box{
+  padding: 20px 0;
+  text-align: center;
+}
+
+#about .container .box i{
+  font-size: 30px;
+  padding: 10px;
+  border: 2px solid rgb(26, 218, 231);
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+
+
+#about .container .box i:hover{
+  background-color: rgb(255, 255, 255);
+  color: rgb(26, 218, 231);
+  transition: all ease 0.5s;
+}
+
+#about .container .box h2{
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(0, 0, 0);
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+#about .container .box p{
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(0, 0, 0);
+  font-weight: 400;
+  justify-content: justify;
+  margin-bottom: 20px;
+}
+
+#about .container .box .btn{
+  padding: 10px 30px;
+  background-color: transparent;
+  text-decoration: none;
+  color: rgb(26, 218, 231);
+  font-size: 15px;
+  margin: 0 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(26, 218, 231);
+}
+
+#about .container .box .btn:hover{
+  background-color: rgb(26, 218, 231);
+  text-decoration: #ffffff;
+  color: aliceblue;
+  transition: all ease 0.5s;
+}
+
+/* ========================Portfolio====================== */
+
+#portfolio{
+  padding: 50px 0px;
+  display: flex;
+  background-color: rgb(228, 227, 227);
+}
+#portfolio .container{
+  justify-content: center;
+  text-align: center;
+}
+
+#portfolio .container h1{
+  font-size: 30px;
+  padding: 20px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(0, 0, 0);
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+#about .container .box1{
+  display: flex;
+  padding: 20px 20px;
+  text-align: center;
+  max-width: 400px;
+}
+
+
+#portfolio .container .box1 img{
+  padding: 5px;
+}
+
+#about .container .box2{
+  width: 20%;
+  display: flex;
+  padding: 40px 0;
+  text-align: center;
+}
+
+
+#portfolio .container .box2 img{
+  padding: 5px;
+  margin-bottom: 30px;
+}
+
+#portfolio .container .btn{
+  padding: 10px 30px;
+  background-color: transparent;
+  color: rgb(26, 218, 231);
+  font-size: 15px;
+  margin: 0 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(26, 218, 231);  
+}
+
+#portfolio .container .btn:hover{
+  background-color: rgb(26, 218, 231);
+  text-decoration: #ffffff;
+  color: aliceblue;
+  transition: all ease 0.5s;
+}
+
+/* ========================contact====================== */
+
+
+#contact {
+  background-image: url(images/footer.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  width: 100%;
+}
+
+
+#contact .container{
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#contact .overlay{
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+}
+
+#contact .container h1{
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: 200;
+  margin: 50px;
+}
+
+#contact .container .info{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  height: 100%;
+}
+
+#contact .container .info .left{
+  width: 40%;
+  text-align: left;
+  padding: 20px 0px;
+}
+
+
+#contact .container .info .left h2{
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: left;
+}
+
+#contact .container .info .left .icons :nth-child(1){
+  font-size: 20px;
+  background-color: rgb(16, 46, 218);
+  color: rgb(224, 225, 233);
+  border-radius: 50%;
+}
+
+#contact .container .info .left .icons :nth-child(2){
+  font-size: 20px;
+  background-color: rgb(203, 204, 209);
+  color: rgb(34, 59, 247);
+  border-radius: 50%;
+}
+
+#contact .container .info .left .icons :nth-child(3){
+  font-size: 20px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(218, 11, 11);
+  border-radius: 50%;
+}
+
+#contact .container .info .left p{
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(196, 193, 193);
+  font-weight: 200;
+  margin-bottom: 5px;
+}
+
+
+#contact .container .info .right .name{
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#contact .container .info .right .name input{
+  padding: 10px 10px;
+  margin-bottom: 10px;
+  border-radius: 5px; 
+  margin-left: 10px;
+}
+
+#contact .container .info .right textarea{
+  width: 92%;
+  margin-bottom: 10px;
+  border-radius: 5px; 
+  margin-left: 10px;
+}
+
+#contact .container .info .right .btn{
+  padding: 5px 15px;
+  background-color: transparent;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+  justify-content: right;
+  margin-left: 330px;
+}
+
+#contact .container .info .right .btn:hover{
+  background-color: rgb(26, 218, 231);
+  text-decoration: #ffffff;
+  transition: all ease 0.5s;
+}
+
+#contact footer{
+  background-color: rgb(0, 0, 0);
+  padding: 5px 0px;
+  color: silver;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
